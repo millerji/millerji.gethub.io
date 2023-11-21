@@ -1,6 +1,10 @@
 /*********** This is the main css stylesheet for isaacmiller.github.io/project-2 site */
 
 /*********** Typography */
+
+body {
+    color: #ffffff;
+}
 :root {
     --body:'Libre Franklin', sans-serif; 
     --headings:'Squada One', sans-serif; 
@@ -26,12 +30,10 @@ section {
 }
 
 #second-section {
-    background-color: white;
     font-family: var(--body);
 }
 
 #third-section {
-    background-color: white;
     font-family: var(--body);
 }
 
@@ -41,16 +43,30 @@ section {
 }
 
 .chunk {
-    background-color: white;
+    background-color: black;
 
 }
 
 .image {
     width: 500px;
     height: 300px;
+    margin-left: 200px;
 }
 
 .buttons{ 
     display: flex;
     flex-direction: column;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 56px 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: contents;
 }
