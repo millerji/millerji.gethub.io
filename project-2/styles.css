@@ -10,12 +10,17 @@ body {
     --headings:'Squada One', sans-serif; 
 }
 
+.overlay.text span {
+    display: block;
+    margin-top: 150px;
+}
+
 
 
 
 /*********** Color */
 
-/*********** Navigation */
+
 
 /*********** Layout */
 section {
@@ -26,11 +31,25 @@ section {
 
 #first-section {
     background-color: black;
-    font-family: var(--headings);
+    font-family: var(--headings)
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 500;
+    text-align: right;
+}
+
+.overlay-section{
+    position: relative;
+    display: flex;
 }
 
 #second-section {
+    background-color: black;
     font-family: var(--body);
+    position: absolute;
 }
 
 #third-section {
@@ -50,7 +69,7 @@ section {
 .image {
     width: 500px;
     height: 300px;
-    margin-left: 200px;
+    
 }
 
 .buttons{ 
@@ -58,15 +77,22 @@ section {
     flex-direction: column;
 }
 
+
+/*********** Navigation */
 nav {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 56px 0;
     font-size: 24px;
+    background-color: black;
 }
 
 nav ul {
     list-style-type: none;
     display: contents;
+}
+
+li {
+    margin: 15px;
 }
