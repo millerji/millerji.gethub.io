@@ -12,7 +12,8 @@ body {
 
 .overlay.text span {
     display: block;
-    margin-top: 150px;
+    margin-top: 0;
+    font-size: 50px;
 }
 
 
@@ -37,7 +38,7 @@ section {
 .overlay{
     position: absolute;
     top: 0;
-    left: 500;
+    left: 50;
     text-align: right;
 }
 
@@ -54,6 +55,8 @@ section {
 
 #third-section {
     font-family: var(--body);
+    position: absolute;
+    top: 1100px;
 }
 
 .flex {
@@ -71,12 +74,39 @@ section {
     height: 300px;
     
 }
+.container {
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    }
 
-.buttons{ 
+    .buttons{ 
     display: flex;
     flex-direction: column;
 }
 
+.container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+
+
+.flex-paragraph {
+    flex: 1;
+    max-width: 50%;
+}
+
+.dirk {
+    display: flex;
+    align-items: center;
+}
 
 /*********** Navigation */
 nav {
